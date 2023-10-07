@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins:wght@400;500;600;700&family=Trispace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Snippet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended&display=swap');
 
 
 
@@ -11,25 +13,44 @@
 
 * {
     font-family: 'Courier Prime', monospace;
+    color:#D6D6D6;
+    
     
 }
 
 body {
     background-color: #f6f9fc;
+    background-color: #46324B;
+    background-color: #302334;
+    background-color: #291E2C;
+    /* background-color: #1D1D28; */
 }
 
 nav{
     box-shadow: none
 }
 
+.brand-logo{
+    font-family: 'Libre Barcode 39 Extended', cursive;
+}
+
 .hero-section{
     margin-top: 4rem;
+    /* margin-bottom: 4rem; */
 }
 
 .hero-title {
     /* font-family: 'Monaco'; */
     font-size: 4.5em;
-    color:#90a4ae
+    color:#90a4ae;
+    color: #68516E;
+    color:#B29EB7;
+    color: white;
+    color:#d3d6db;
+    color:#D6D6D6;
+    /* color: #B4B4BE;
+    color:#9B9193; */
+    /* color: #E7ECEF; */
 
     /* font-family: 'Poppins', sans-serif; */
     /* font-family: 'Trispace', sans-serif; */
@@ -46,7 +67,7 @@ nav{
     line-height: 1.5rem;
     position: relative;
     /* margin: 0 auto; */
-    color: #fff;
+    color: #ffffffbd;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility
@@ -84,11 +105,13 @@ nav{
     padding: 1.5rem;
     border-bottom-right-radius: .5rem;
     border-bottom-left-radius: .5rem;
-    background-color: #424242
+    /* background-color: #46324B */
+    background-color: #46324B;
+    background-color: #3a3246;
 }
 
 .terminal__window--highlight {
-    color: #2bbfe4
+    color: #FCD080
 }
 
 .terminal__circle {
@@ -114,7 +137,8 @@ nav{
 
 .terminal__prompt--checkout,
 .terminal__prompt--mail,
-.terminal__prompt--show-contact {
+.terminal__prompt--show-contact
+.terminal__prompt--show-skills {
     opacity: 0
 }
 
@@ -126,9 +150,14 @@ nav{
     animation: show-show-contact 16s infinite
 }
 
+
 .terminal__prompt--mail {
     animation: show-mail 16s infinite
 }
+
+/* .terminal__prompt--show-skills {
+    animation: show-skills 16s infinite
+} */
 
 .terminal__prompt--skills {
     animation: show-skills 16s infinite
@@ -266,12 +295,12 @@ nav{
 @keyframes show-skills {
 
     0%,
-    55% {
+    80% {
         opacity: 0
     }
 
     100%,
-    60% {
+    85% {
         opacity: 1
     }
 }
@@ -316,4 +345,47 @@ a:focus,
 a:hover {
     color: #0091eb;
     text-decoration: underline
+}
+
+.projects-section{
+    margin-top: 4rem;
+}
+
+.section-title{
+    font-size: 2.5rem;
+}
+
+/* .badge{
+    padding:.25rem !important;
+} */
+
+.action{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tech{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+}
+
+.tech-tag{
+    background-color: #46324B;
+    color: white;
+    padding:.4rem 1rem .4rem 1rem;
+    margin:.1rem
+}
+
+.img-p2{
+    width: 600px !important;
+  height: 500px !important;
+    object-fit:fill;
+}
+
+svg{
+    color: white !important;
 }
